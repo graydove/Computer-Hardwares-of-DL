@@ -18,7 +18,7 @@
 | Pascal架构  | GTX1080Ti 11GB | TITAN X(Pascal) 12GB,TITAN Xp 12GB | Tesla P100 16GB,Tesla P40 24GB |  Quadro P6000 24GB  |
 |  Volta架构  |       -        |          TITAN V 12/32GB           |     Tesla V100(S) 16/32GB      |  Quadro GV100 32GB  |
 | Turing架构  | RTX2080Ti 11GB |           TITAN RTX 24GB           |         Tesla T4 16GB          | Quadro RTX8000 48GB |
-| Ampere架构  |       -        |                 -                  |        Tesla A100 40GB         |          -          |
+| Ampere架构  |  RTX3090 24GB  |                 -                  |        Tesla A100 40GB         |          -          |
 
 图形卡和游戏卡、TITAN的规格差不多，如RTX8000基本上就是TITAN RTX的显存增大版，但价格往往贵了很多，因此买2张TITAN RTX比1张RTX 8000更划算
 
@@ -41,28 +41,37 @@
 |    RTX2070 8GB    |   TU106-400A-A1，2304个   |    停产     |
 | RTX2070 Super 8GB |   TU104-410-A1，2560个    |  3459-4799  |
 |    RTX2080 8GB    |   TU104-400A-A1，2944个   |    停产     |
-| RTX2080 Super 8GB |   TU104-450-A1，3072个    |  4599-7199  |
-|  RTX2080Ti 11GB   | TU102-300A-K1-A1，4352个  | 7899-29999  |
+| RTX2080 Super 8GB |   TU104-450-A1，3072个    |    停产     |
+|  RTX2080Ti 11GB   | TU102-300A-K1-A1，4352个  |    停产     |
 |  TITAN RTX 24GB   |   TU102-400-A1，4608个    | 19999-22999 |
 |   TITAN V 12GB    |   GV100-400-A1，5120个    |             |
 | Quadro GV100 32GB |       GV100，5120个       |             |
-|  ？RTX3080 10GB   | ？GA102-200-K1-A1，4352个 |             |
-| ？RTX3080Ti 12GB  |  ？GA102-300-A1，5120个   |             |
-|  ？RTX3090 24GB   |      ？GA102，5376个      |             |
 
-对于10系（包括TITAN Xp，TITAN X，GP100，Telsa P40）或更古老的显卡来说，CUDA核心不能简单叠加，需要考虑显存带宽、散热之类的
+|    NVIDIA    | CUDA核心/Tensor核心及数量 | 价格 |
+| :----------: | :-----------------------: | :--: |
+| RTX 3070 8G  |         ？5888个          |      |
+| RTX 3080 10G |         ？8704个          |      |
+| RTX 3090 24G |         ？10496个         |      |
 
-30系的显卡上市后也会有对应的80Ti，80，70，60显卡
-
-10系显卡包括：GT1030，GTX1050，GTX1050Ti，GTX1060，GTX1070，GTX1070Ti，GTX1080，GTX1080Ti，TITAN X（Pascal），TITAN Xp
-
-9系显卡包括：GTX950，GTX960，GTX970，GTX980，GTX980Ti，GTX TITAN X
+**对于10系（包括TITAN Xp，TITAN X，GP100，Telsa P40）或更古老的显卡来说，CUDA核心不能简单叠加，需要考虑显存带宽、散热之类的**
 
 深度学习主要是看显存，其次是看CUDA核心的数量（如GTX1080Ti 11G有3584个CUDA核心，TITAN Xp 12G有3840个CUDA核心，GTX980Ti 6G有2816个CUDA核心）
 
+显存决定了能否运行，而CUDA核心数量、显存频率、显存种类、显卡带宽决定了运行速度
+
 移动端显卡和台式机的显卡性能基本一致，差距在散热和功耗上
 
-（个别显卡只有笔记本才有，比如GTX1650Ti，以及MaxQ显卡，MaxQ显卡规模一样，但被设置了功耗墙，因此跑深度学习时较同样的桌面级显卡要差一些）
+（个别显卡只有笔记本才有，比如GTX1650Ti，以及MaxQ显卡，MaxQ显卡规模一样，但被设置了更低的功耗墙，因此跑深度学习时较同样的桌面级显卡要差一些）
+
+旧显卡：
+
+9系显卡包括：GTX950，GTX960，GTX970，GTX980，GTX980Ti，GTX TITAN X
+
+10系显卡包括：GT1030，GTX1050，GTX1050Ti，GTX1060，GTX1070，GTX1070Ti，GTX1080，GTX1080Ti，TITAN X（Pascal），TITAN Xp
+
+16系显卡包括：GTX1650，GTX1650Super，GTX1660，GTX1660Super，GTX1660Ti
+
+20系显卡包括：RTX2060，RTX2060Super，RTX2070，RTX2070Super，RTX2080，RTX2080Super，RTX2080Ti，TITAN RTX
 
 
 
@@ -136,7 +145,7 @@ T1000M 4G的CUDA数量为768个
 
 多路显卡推荐双槽位的显卡，已知的有：
 
-全部的公版卡
+全部的公版卡（注意RTX3090公版是三槽卡）
 
 **华硕（ASUS）TURBO-RTX2080TI-11GD6-DL**
 
