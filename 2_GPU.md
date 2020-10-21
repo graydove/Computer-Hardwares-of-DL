@@ -18,7 +18,7 @@
 | Pascal架构  | GTX1080Ti 11GB | TITAN X(Pascal) 12GB,TITAN Xp 12GB | Tesla P100 16GB,Tesla P40 24GB |  Quadro P6000 24GB  |
 |  Volta架构  |       -        |          TITAN V 12/32GB           |     Tesla V100(S) 16/32GB      |  Quadro GV100 32GB  |
 | Turing架构  | RTX2080Ti 11GB |           TITAN RTX 24GB           |         Tesla T4 16GB          | Quadro RTX8000 48GB |
-| Ampere架构  |  RTX3090 24GB  |                 -                  | Tesla A100 40GB,Tesla A40 48GB | Quadro RTX A6000 48GB |
+| Ampere架构  |  RTX3090 24GB  |                 -                  | NVIDIA A100 40GB,NVIDIA A40 48GB | NVIDIA RTX A6000 48GB |
 
 图形卡和游戏卡、TITAN的规格差不多，如RTX8000基本上就是TITAN RTX的显存增大版，但价格往往贵了很多，因此买2张TITAN RTX比1张RTX 8000更划算
 
