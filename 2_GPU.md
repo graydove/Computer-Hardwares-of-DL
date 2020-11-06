@@ -101,6 +101,8 @@ TITAN系列显卡是从7系显卡开始的一系列高端显卡
 
 20系：Tesla T4 16G CUDA 2560，Tesla V100 16G/32G CUDA 5120
 
+30系：NVIDIA A100 40GB，NVIDIA A40 48GB
+
 
 
 **图形卡**
