@@ -18,7 +18,7 @@
 | Pascal架构  | GTX1080Ti 11GB | TITAN X(Pascal) 12GB,TITAN Xp 12GB | Tesla P100 16GB,Tesla P40 24GB |  Quadro P6000 24GB  |
 |  Volta架构  |       -        |          TITAN V 12/32GB           |     Tesla V100(S) 16/32GB      |  Quadro GV100 32GB  |
 | Turing架构  | RTX2080Ti 11GB |           TITAN RTX 24GB           |         Tesla T4 16GB          | Quadro RTX8000 48GB |
-| Ampere架构  |  RTX3090 24GB  |                 -                  | NVIDIA A100 40GB,NVIDIA A40 48GB | NVIDIA RTX A6000 48GB |
+| Ampere架构  |  RTX3090 24GB  |                 -                  | NVIDIA A100 40/80GB,NVIDIA A40 48GB | NVIDIA RTX A6000 48GB |
 
 图形卡和游戏卡、TITAN的规格差不多，如RTX8000基本上就是TITAN RTX的显存增大版，但价格往往贵了很多，因此买2张TITAN RTX比1张RTX 8000更划算
 
@@ -32,7 +32,7 @@
 |     MX350 2GB     |    GP107-670-A1，640个    |             |
 |   GTX1050Ti 4GB   |       GP107，768个        |   749-949   |
 |    GTX1650 4GB    |    TU117-300-A1，896个    |  799-1199   |
-|    ？MX450 2GB    |      ？TU117，1024个      |             |
+|    MX450 2GB    |      TU117，1024个      |             |
 | GTX1650 Super 4GB |  TU116-250-KA-A1，1280个  |  1069-1499  |
 | GTX1660/Super 4GB |   TU116-300-A1，1408个    |  1299-1999  |
 |   GTX1660Ti 6GB   |   TU116-400-A1，1536个    |  1749-2299  |
@@ -52,6 +52,7 @@
 | RTX 3070 8G  |         GA104-300-A1，5888个**          |  3899+    |
 | RTX 3080 10G |         GA102-200-K1-A1，8704个**          |   5499+   |
 | RTX 3090 24G |         GA102-300-A1，10496个**         |   11999+   |
+| NVIDIA A6000 48G |         GA102，10752个**         |      |
 
 **对于10系（包括TITAN Xp，TITAN X，GP100，Telsa P40）或更古老的显卡来说，CUDA核心不能简单叠加，需要考虑显存带宽、散热之类的**
 
@@ -101,7 +102,7 @@ TITAN系列显卡是从7系显卡开始的一系列高端显卡
 
 20系：Tesla T4 16G CUDA 2560，Tesla V100 16G/32G CUDA 5120
 
-30系：NVIDIA A100 40GB，NVIDIA A40 48GB
+30系：NVIDIA A100 40/80GB，NVIDIA A40 48GB
 
 
 
