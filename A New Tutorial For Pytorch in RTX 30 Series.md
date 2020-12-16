@@ -204,7 +204,9 @@ sudo sh ./cuda_11.0.2_450.51.05_linux.run
 
 配置环境变量，运行如下命令打开profile文件
 
+```shell
 sudo vi /etc/profile
+```
 
 2. 打开文件后在文件末尾添加路径，也就是安装目录，命令如下：
 
