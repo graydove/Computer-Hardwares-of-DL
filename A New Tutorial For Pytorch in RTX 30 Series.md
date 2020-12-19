@@ -67,7 +67,7 @@ VCB的群里兴起了一股使用先马趣造机箱来装机的潮流，因此�
 1. 备份原来的源：
 
 ```shell
-cp /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 ```
 
 2. 将源的内容设置为阿里云镜像：
@@ -285,10 +285,10 @@ chmod +x Anaconda3-2020.11-Linux-x86_64.s
 conda配置源：
 
 ```shell
-sudo gedit ~/.condarc
+sudo vim ~/.condarc
 ```
 
-配置文件修改为：
+配置文件改为：
 
 ```shell
 channels:
@@ -303,17 +303,15 @@ channels:
 show_channel_urls: true
 ```
 
-  
+  然后重启即可
 
 
 
-PS：如果不想每次重启之后都要进入base环境，可以输入：
+PS：如果不想每次重启之后都要进入base环境，可以在重启后输入：
 
 ```sh
 conda config --set auto_activate_base false
 ```
-
-然后重启即可
 
 
 
@@ -358,6 +356,16 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.0
 ![image-20201216222730396](https://i.loli.net/2020/12/16/hVFci6pt3YHj8nL.png)
 
 这里没有pip的问题，说明是正常的
+
+
+
+如果有问题，请输入`python3 -m torch.utils.collect_env`自查一下
+
+正常应该是：
+
+![image-20201219232959278](https://i.loli.net/2020/12/19/D8YXlHG4hEzMPJN.png)
+
+注意图里的cuda，cudnn，pytorch版本
 
 
 
