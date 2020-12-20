@@ -216,12 +216,6 @@ export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
 export PATH=${CUDA_HOME}/bin:${PATH}
 ```
 
-然后使其生效
-
-```shell
-source ~/.bashrc
-```
-
 之后重启电脑：
 
 ```shell
