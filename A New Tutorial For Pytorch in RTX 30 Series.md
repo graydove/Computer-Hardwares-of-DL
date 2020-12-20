@@ -365,4 +365,4 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.0
 
 ## 后记
 
-Caffe、Tensoflow（2.3.1）在RTX3090的测试都还没成功...不知道什么时候可以出新的版本
+Tensorflow2.4.0 测试成功
