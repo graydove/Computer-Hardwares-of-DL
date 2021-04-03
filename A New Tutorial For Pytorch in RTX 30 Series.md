@@ -200,7 +200,7 @@ sudo sh ./cuda_11.0.2_450.51.05_linux.run
 
 **PS：注意在安装CUDA的时候不要安装驱动，任何时候都是这样的**
 
-要记住安装位置，默认是安装在/usr/local/cuda-9.0文件夹下。
+要记住安装位置，默认是安装在/usr/local/cuda-11.0文件夹下。
 
 配置环境变量，运行如下命令打开profile文件
 
@@ -336,7 +336,7 @@ pip install torch==1.7.1 torchvision==0.8.2 torchaudio===0.7.2
 可以用
 
 ```shell
-conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
+conda install pytorch torchvision torchaudio cudatoolkit=11.0
 ```
 
 或者（已经假设换好conda源了）
