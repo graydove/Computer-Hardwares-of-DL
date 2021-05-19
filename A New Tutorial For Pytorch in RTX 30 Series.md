@@ -4,13 +4,13 @@
 
 此时pytorch官方刚刚发布了支持RTX3090和cuDNN 8.0.5的pytorch1.7.1版本，因此比较适合装机。
 
-
+&nbsp;
 
 ## 0 前言
 
 VCB的群里兴起了一股使用先马趣造机箱来装机的潮流，因此我也想试试，看看这个机箱能不能满足“实习生级”的装机和运行。实际上是可以的，只是未来如果要再加1张3090是要换机箱、主板、电源了。
 
-
+&nbsp;
 
 ## 1.硬件篇
 
@@ -26,9 +26,9 @@ VCB的群里兴起了一股使用先马趣造机箱来装机的潮流，因此�
 
 主板图片，可以看到主板的扩展性就单张卡而言基本上足够了。
 
-![image-20201215210410321](https://i.loli.net/2021/05/19/7Wu8APDvBJ9ROwh.png)
+![](https://i.loli.net/2021/05/19/7Wu8APDvBJ9ROwh.png)
 
-
+&nbsp;
 
 吐槽：
 
@@ -46,7 +46,7 @@ VCB的群里兴起了一股使用先马趣造机箱来装机的潮流，因此�
 
 关于机箱：如果不用底部风扇（其实个人感觉没什么用，用了猫头鹰的A12-25发现都没怎么降低温度），最多可以接3个3.5寸硬盘和2个SATA硬盘
 
-
+&nbsp;
 
 ## 2.系统篇
 
@@ -58,7 +58,7 @@ VCB的群里兴起了一股使用先马趣造机箱来装机的潮流，因此�
 
 安装操作系统不再详述，找个网络环境好一点的地方和时间段安装就可以
 
-
+&nbsp;
 
 ### 2.2 **配置国内镜像软件源**
 
@@ -98,7 +98,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-
+&nbsp;
 
 ### **2.3 安装Python和pip**
 
@@ -128,7 +128,7 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple/
 trusted-host = pypi.tuna.tsinghua.edu.cn
 ```
 
-
+&nbsp;
 
 ### **2.4 配置SSH**
 
@@ -142,7 +142,7 @@ sudo apt-get install openssh-server
 /etc/init.d/ssh start
 ```
 
-
+&nbsp;
 
 ## **3. DL开发环境配置篇**
 
@@ -154,7 +154,7 @@ sudo apt-get install openssh-server
 
 进入系统的图形桌面，打开`Software & Updates`软件，可以看到标签栏有一个`Additional Drivers`：
 
-![2020-12-16 21-48-07 的屏幕截图](https://i.loli.net/2020/12/16/JGkl1ZoMmEz2XdH.png)
+![](https://i.loli.net/2021/05/19/JQqdxY6aOvw2CDU.png)
 
 选择第一个安装Nvidia官方驱动（第二个是开源驱动）即可，根据网络情况稍等大概十分钟，安装完重启服务器。
 
@@ -175,7 +175,7 @@ sudo apt-get update
 sudo apt-get install nvidia-driver-455
 ```
 
-
+&nbsp;
 
 ### **3.2 安装CUDA**
 
@@ -185,7 +185,7 @@ sudo apt-get install nvidia-driver-455
 
 去官网下载cuda安装包：[CUDA Toolkit 11.0 Download | NVIDIA Developer](https://link.zhihu.com/?target=https%3A//developer.nvidia.com/cuda-11.0-download-archive)，相关选项如下（根据实际情况选择）：
 
-![image-20201215205514510](https://i.loli.net/2020/12/15/xHCFQDq4jnmXBRT.png)
+![](https://i.loli.net/2021/05/19/yvLnG7CbE5oxTsj.png)
 
 如果显卡是RTX3090，RTX3080，RTX3070，RTX3060Ti等，用CUDA11.0
 
@@ -232,9 +232,9 @@ sudo make
 
 如果成功，应该显示显卡信息：
 
-![image-20201216220212570](https://i.loli.net/2020/12/16/DnLsC5EeAmiwBHq.png)
+![](https://i.loli.net/2021/05/19/vewXYAFJTdBc3ls.png)
 
-
+&nbsp;
 
 ### **3.3 安装cuDNN**
 
@@ -242,7 +242,7 @@ sudo make
 
 **当前唯一的选择是cuDNN  v8.0.5**
 
-![image-20201216220846961](https://i.loli.net/2020/12/16/x7eEIz1vwXYsirJ.png)
+![](https://i.loli.net/2021/05/19/IkDjeydP4RXA6bV.png)
 
 重命名为：`cudnn-11.0-linux-x64-v8.0.5.39.tgz`
 
@@ -252,7 +252,7 @@ sudo make
 sudo tar zxf cudnn-11.0-linux-x64-v8.0.5.39.tgz -C /usr/local/
 ```
 
-
+&nbsp;
 
 ### **3.4 安装Conda环境**
 
@@ -272,7 +272,7 @@ chmod +x Anaconda3-2020.11-Linux-x86_64.s
 
 然后会询问你是否要初始化conda，输入yes确认，重开终端窗口之后，就可以看到conda环境可用了（base代表默认环境）：
 
-<img src="https://i.loli.net/2021/05/19/4831Sy5T2QNM9Fp.png" alt="image-20201216221156245" style="zoom: 50%;" />
+![](https://i.loli.net/2021/05/19/4831Sy5T2QNM9Fp.png)
 
 **conda的使用方法网上搜一下有很多，这里就不赘述了。**
 
@@ -299,7 +299,7 @@ show_channel_urls: true
 
   然后重启即可
 
-
+&nbsp;
 
 PS：如果不想每次重启之后都要进入base环境，可以在重启后输入：
 
@@ -307,7 +307,7 @@ PS：如果不想每次重启之后都要进入base环境，可以在重启后�
 conda config --set auto_activate_base false
 ```
 
-
+&nbsp;
 
 ### **3.5 Pytorch测试（pip）**
 
@@ -325,11 +325,11 @@ pip install torch==1.7.1 torchvision==0.8.2 torchaudio===0.7.2
 
 正常情况下的pytorch测试结果：
 
-![image-20201216222015460](https://i.loli.net/2021/05/19/JzOYv9TrEehUkbx.png)
+![](https://raw.githubusercontent.com/graydove/Computer-Hardwares-of-DL/master/img/JzOYv9TrEehUkbx.png)
 
 这是因为CUDA11.0和RTX3090等显卡的兼容性还不够好，这种情况下使用pytorch可能会出现其他的问题
 
-
+&nbsp;
 
 ### 3.6 Pytorch测试（conda）
 
@@ -347,17 +347,17 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.0
 
 正常情况下的pytorch测试结果：
 
-![image-20201216222730396](https://i.loli.net/2021/05/19/LFaCdAmlRsZTUp3.png)
+![](https://i.loli.net/2021/05/19/LFaCdAmlRsZTUp3.png)
 
 这里没有pip的问题，说明是正常的
 
-
+&nbsp;
 
 如果有问题，请输入`python3 -m torch.utils.collect_env`自查一下
 
 正常应该是：
 
-![image-20201219232959278](https://i.loli.net/2021/05/19/XykvaZlWMdf1VUK.png)
+![](https://i.loli.net/2021/05/19/XykvaZlWMdf1VUK.png)
 
 注意图里的cuda，cudnn，pytorch版本
 
