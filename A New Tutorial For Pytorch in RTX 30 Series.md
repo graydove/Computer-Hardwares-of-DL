@@ -26,7 +26,7 @@ VCB的群里兴起了一股使用先马趣造机箱来装机的潮流，因此�
 
 主板图片，可以看到主板的扩展性就单张卡而言基本上足够了。
 
-![image-20201215210410321](https://i.loli.net/2020/12/15/DUmg4rYW7vQyxVF.png)
+![image-20201215210410321](https://i.loli.net/2021/05/19/7Wu8APDvBJ9ROwh.png)
 
 
 
@@ -272,7 +272,7 @@ chmod +x Anaconda3-2020.11-Linux-x86_64.s
 
 然后会询问你是否要初始化conda，输入yes确认，重开终端窗口之后，就可以看到conda环境可用了（base代表默认环境）：
 
-<img src="https://i.loli.net/2020/12/16/UCx5ARqVgQnfuXD.png" alt="image-20201216221156245" style="zoom: 50%;" />
+<img src="https://i.loli.net/2021/05/19/4831Sy5T2QNM9Fp.png" alt="image-20201216221156245" style="zoom: 50%;" />
 
 **conda的使用方法网上搜一下有很多，这里就不赘述了。**
 
@@ -325,7 +325,7 @@ pip install torch==1.7.1 torchvision==0.8.2 torchaudio===0.7.2
 
 正常情况下的pytorch测试结果：
 
-![image-20201216222015460](https://i.loli.net/2020/12/16/KaMEFHSLG27Tfdy.png)
+![image-20201216222015460](https://i.loli.net/2021/05/19/JzOYv9TrEehUkbx.png)
 
 这是因为CUDA11.0和RTX3090等显卡的兼容性还不够好，这种情况下使用pytorch可能会出现其他的问题
 
@@ -347,7 +347,7 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.0
 
 正常情况下的pytorch测试结果：
 
-![image-20201216222730396](https://i.loli.net/2020/12/16/hVFci6pt3YHj8nL.png)
+![image-20201216222730396](https://i.loli.net/2021/05/19/LFaCdAmlRsZTUp3.png)
 
 这里没有pip的问题，说明是正常的
 
@@ -357,7 +357,7 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.0
 
 正常应该是：
 
-![image-20201219232959278](https://i.loli.net/2020/12/19/D8YXlHG4hEzMPJN.png)
+![image-20201219232959278](https://i.loli.net/2021/05/19/XykvaZlWMdf1VUK.png)
 
 注意图里的cuda，cudnn，pytorch版本
 
