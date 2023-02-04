@@ -16,13 +16,13 @@
 
 |  显卡架构  |    游戏显卡    |               TITAN               |               计算卡               |      专业图形卡      |
 | :---------: | :------------: | :--------------------------------: | :---------------------------------: | :-------------------: |
-| **Ada Lovelace架构** | **RTX4090 24GB** | - | - | **NVIDIA RTX 6000 Ada Generation 48GB** |
+| **Ada Lovelace架构** | **RTX 4090 24GB** | - | - | **NVIDIA RTX 6000 Ada Generation 48GB** |
 | **Hopper架构** | - | - | **NVIDIA H100 80GB** | - |
-| Ampere架构 | RTX3090Ti 24GB | - | NVIDIA A100 40/80GB | NVIDIA RTX A6000 48GB |
-| Turing架构 | RTX2080Ti 11GB | TITAN RTX 24GB | Tesla T4 16GB | Quadro RTX8000 48GB |
+| Ampere架构 | RTX 3090Ti 24GB | - | NVIDIA A100 40/80GB | NVIDIA RTX A6000 48GB |
+| Turing架构 | RTX 2080Ti 11GB | TITAN RTX 24GB | Tesla T4 16GB | Quadro RTX 8000 48GB |
 | Volta架构 | - | TITAN V 12/32GB | Tesla V100(S) 16/32GB | Quadro GV100 32GB |
-| Pascal架构 | GTX1080Ti 11GB | TITAN X(Pascal) 12GB,TITAN Xp 12GB | Tesla P100 16GB,Tesla P40 24GB | Quadro P6000 24GB |
-| Maxwell架构 |  GTX980Ti 6GB  |            GTX TITAN X 12GB            |           Tesla M40 24GB           |   Quadro M6000 12GB   |
+| Pascal架构 | GTX 1080Ti 11GB | TITAN X(Pascal) 12GB,TITAN Xp 12GB | Tesla P100 16GB,Tesla P40 24GB | Quadro P6000 24GB |
+| Maxwell架构 |  GTX 980Ti 6GB  |            GTX TITAN X 12GB            |           Tesla M40 24GB           |   Quadro M6000 12GB   |
 
 图形卡和游戏卡、TITAN的规格差不多，如RTX8000基本上就是TITAN RTX的显存增大版，但价格往往贵了很多，因此买2张TITAN RTX比1张RTX 8000更划算
 
